@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/../style.css">
+</head>
+
+<body>
+  <section class="profile">
+    <img class="userImg" src="{{user.avatar}}" alt="">
+    <section class="info">
+      <h1>{{user.name}}</h1>
+      <p>{{user.address.city}}, {{user.address.country}} | {{user.job}} at {{user.company}}</p>
+      <p>{{user.email}} | {{user.phone}}</p>
+    </section>
+  </section>
+  <table>
+    <tr>
+      <td>
+        <h4>Education</h4></td>
+      <td>{{user.university}}</td>
+    </tr>
+    <tr>
+      <td>
+        <h4>Skills</h4></td>
+      <td>
+        <ul>
+          <li>{{skills.0}}</li>
+          <li>{{skills.1}}</li>
+          <li>{{skills.2}}</li>
+        </ul>
+
+      </td>
+
+    </tr>
+  </table>
+
+
+
+
+</body>
+
+</html>
